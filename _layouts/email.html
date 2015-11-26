@@ -1,0 +1,62 @@
+---
+layout: default
+---
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+
+  <title>Inbox: {{page.title }}</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/application.css">
+  <link rel="stylesheet" href="../../css/toolkit.css">
+  <link rel="stylesheet" href="../../css/docs.css">
+
+
+  <script src="../../js/jquery.min.js"></script>
+  <script src="../../js/application.js"></script>
+  <script src="../../js/toolkit.js"></script>
+
+</head>
+<body style="background-color:#e5e5e5">
+  {% include toc.html %}
+
+  <div class="stage" id="app-stage" style="background-color:#e5e5e5">
+
+    <button class="btn btn-link stage-toggle" data-target="#app-stage" data-toggle="stage">
+      <span class="icon icon-menu stage-toggle-icon"></span>
+      Menu
+    </button>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2" style="text-align:center;margin-top:24px;margin-bottom:36px">
+        <img src="../../img/logo_med.png" alt="">
+      </div>
+
+    </div>
+    <div class="row" id="email">
+      <div class="col-lg-8 col-lg-offset-2" style="border:1px solid #ccc;box-shadow: 3px 3px 1px #999;border-radius:20px;background-color:#fff;padding:30px">
+        <div class="col-md-1">
+            <img src="../../img/rob.png" alt="" class="img-circle">
+        </div>
+        <div class="col-md-7" style="margin-left:18px">
+          <h3>Rob Conery</h3>
+          <p>To: <b>You</b></p>
+        </div>
+        <div class="col-md-3 pull-right">
+          <p style="text-align:right;padding-top:12px">{{page.date}} <br />
+          Sent - rob@redfour.io
+        </div>
+        <div class="clearfix"></div>
+        <h2>{{page.title}}</h2>
+        <hr>
+        {{ content }}
+      </div>
+    </div>
+
+  </div>
+</body>

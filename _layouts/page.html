@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{page.title }} | Red/Four</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/application.css">
+  <link rel="stylesheet" href="../../css/toolkit.css">
+  <link rel="stylesheet" href="../../css/docs.css">
+  <link rel="stylesheet" href="../../css/solarized.css">
+
+  <script src="../../js/jquery.min.js"></script>
+  <script src="../../js/application.js"></script>
+  <script src="../../js/toolkit.js"></script>
+</head>
+<body>
+  {% include toc.html %}
+  <div class="stage" id="app-stage">
+
+    <button class="btn btn-link stage-toggle" data-target="#app-stage" data-toggle="stage">
+      <span class="icon icon-menu stage-toggle-icon"></span>
+      Menu
+    </button>
+
+    <div class="block text-center" >
+
+        <h1 class="block-title">{{page.title}}</h1>
+        <h4 class="text-muted">{{page.summary}}</h4>
+
+    </div>
+
+    <div class="container docs-content">
+
+      {{ content }}
+
+    </div>
+  </div>
+</body>

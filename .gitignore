@@ -1,0 +1,7 @@
+Gemfile.lock
+tmp
+.DS_Store
+*.mov
+Gemfile
+Guardfile
+_site

@@ -1,0 +1,111 @@
+---
+layout: default
+title: Welcome!
+---
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{page.title}} | Red/Four</title>
+
+
+  <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/application.css">
+  <link rel="stylesheet" href="css/toolkit.css">
+  <link rel="stylesheet" href="css/docs.css">
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/application.js"></script>
+  <script src="js/toolkit.js"></script>
+  <style>
+    .stage-toggle {
+      background-color: #8b82aa;
+    }
+    .grad {
+      background: -webkit-linear-gradient(#bb5a01, #520500);
+      background: -o-linear-gradient(#bb5a01, #520500);
+      background: -moz-linear-gradient(#bb5a01, #520500);
+      background: linear-gradient(#bb5a01, #520500);
+      height: 320px;
+      padding-top:80px;
+    }
+  </style>
+</head>
+
+<body>
+  {% include toc.html %}
+  <div class="stage" id="app-stage">
+
+    <button class="btn btn-link stage-toggle" data-target="#app-stage" data-toggle="stage">
+      <span class="icon icon-menu stage-toggle-icon"></span>
+      Menu
+    </button>
+
+    <div class="grad">
+      <div class="container text-center">
+        <h1>
+          <img src="img/logo.png" alt="" style="margin:0"/>
+        </h1>
+        <p style="color:#fff;text-align:center">Powering Your Next Trip to Mars</p>
+      </div>
+    </div>
+
+    <div class="container docs-content">
+      <h1 id="intro">Welcome Resource! Your Onboarding Starts Now...</h1>
+      <p>
+        Welcome to Red/Four - <i>Where the Future Starts Yesterday</i>. We hope you'll enjoy your time here, while learning and growing at the same time.
+      </p>
+      <p>
+        This is some very important information - please make sure it's correct:
+
+      </p>
+      <table class="table table-striped">
+        <tbody>
+          <tr>
+            <td style="width:30px;"><strong>Name</strong></td><td><i>TBD</i></td>
+          </tr>
+          <tr>
+            <td><strong>Position</strong></td><td>Systems Programmer, Level 2</td>
+          </tr>
+          <tr>
+            <td><strong>Coordinator</strong></td><td>Rob Conery</td>
+          </tr>
+          <tr>
+            <td><strong>Start Date</strong></td><td>Today!</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        <i>If your name says "TBD" above don't worry about it. Our systems take a while to update - which is part of the reason you're here!</i>
+      </p>
+      <hr>
+      <h2>The Onboarding Process</h2>
+      <p>
+        Your Onboarding Coordinator will reach out to you in the next few minutes; so go grab yourself a coffee or soda and get familiar with
+        this manual. Below are the steps we'll be walking you through today.
+      </p>
+      <p>
+        Welcome!
+      </p>
+
+    </div>
+    <div class="alert alert-info" style="position:fixed;bottom:20px;right:20px;" id="new-email">
+      <i class="icon icon-envelope"></i> <strong>New Email</strong><br />
+      You have a new email message from <strong>Rob Conery</strong><br />
+      Subject: <a href="{% post_url 2015-11-24-i-need-to-talk-to-you-asap %}" class="alert-link">Send me a note as SOON AS YOU GET HERE'</a>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+  $(function(){
+    setTimeout(function(){
+      var data = localStorage.getItem("redfour-data") || {};
+      if(!data.firstEmailRead){
+        $("#new-email").fadeIn();
+      }
+    }, 12000)
+  })
+</script>
