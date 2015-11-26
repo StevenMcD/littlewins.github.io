@@ -17,6 +17,6 @@ url: "http://littlewins.github.io" # the base hostname & protocol for your site
 twitter_username: robconery
 github_username:  robconery
 permalink: ":categories/:title"
-
+safe: true
 # Build settings
 markdown: redcarpet
