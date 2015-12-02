@@ -16,23 +16,14 @@ title: "Welcome!"
   <link rel="stylesheet" href="css/application.css">
   <link rel="stylesheet" href="css/toolkit.css">
   <link rel="stylesheet" href="css/docs.css">
+  <link rel="stylesheet" href="css/overrides.css">
+  <link rel="stylesheet" href="css/toastr.min.css">
 
   <script src="js/jquery.min.js"></script>
   <script src="js/application.js"></script>
   <script src="js/toolkit.js"></script>
-  <style>
-    .stage-toggle {
-      background-color: #8b82aa;
-    }
-    .grad {
-      background: -webkit-linear-gradient(#bb5a01, #520500);
-      background: -o-linear-gradient(#bb5a01, #520500);
-      background: -moz-linear-gradient(#bb5a01, #520500);
-      background: linear-gradient(#bb5a01, #520500);
-      height: 320px;
-      padding-top:80px;
-    }
-  </style>
+  <script src="js/toastr.min.js"></script>
+
 </head>
 
 <body>
@@ -44,7 +35,7 @@ title: "Welcome!"
       Menu
     </button>
 
-    <div class="grad">
+    <div class="">
       <div class="container text-center">
         <h1>
           <img src="img/logo.png" alt="" style="margin:0"/>
@@ -92,20 +83,7 @@ title: "Welcome!"
       </p>
 
     </div>
-    <div class="alert alert-info" style="position:fixed;bottom:20px;right:20px;display:none" id="new-email">
-      <i class="icon icon-envelope"></i> <strong>New Email</strong><br />
-      You have a new email message from <strong>Rob Conery</strong><br />
-      Subject: <a href="email/i-need-to-talk-to-you-asap" class="alert-link">Send me a note as SOON AS YOU GET HERE'</a>
-    </div>
+
 </div>
 </body>
-<script type="text/javascript">
-  $(function(){
-    setTimeout(function(){
-      var data = localStorage.getItem("redfour-data") || {};
-      if(!data.firstEmailRead){
-        $("#new-email").fadeIn();
-      }
-    }, 12000)
-  })
-</script>
+{% include message_popup.html link="/email/i-need-to-talk-to-you-asap" message="Send me a note as SOON AS YOU GET HERE" %}

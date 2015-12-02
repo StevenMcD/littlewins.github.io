@@ -1,0 +1,55 @@
+<style>
+#toast-container > .toast {
+  background-image: none !important;
+}
+
+#toast-container > .toast:before {
+  position: fixed;
+  font-family: FontAwesome;
+  font-size: 24px;
+  line-height: 18px;
+  float: left;
+  color: #FFF;
+  padding-right: 0.5em;
+  margin: auto 0.5em auto -1.5em;
+}
+#toast-container > .toast-warning:before {
+  content: "\f003";
+}
+#toast-container > .toast-error:before {
+  content: "\f001";
+}
+#toast-container > .toast-info:before {
+  content: "\f005";
+}
+#toast-container > .toast-success:before {
+  content: "\f003";
+}
+</style>
+
+<script>
+
+$(window).scroll(function() {
+   if($(window).scrollTop() + $(window).height() > $(document).height() - 50) {
+     toastr.options = {
+       "closeButton": false,
+       "debug": false,
+       "newestOnTop": false,
+       "progressBar": true,
+       "positionClass": "toast-bottom-right",
+       "preventDuplicates": true,
+       "onclick": function(){
+         location.href='{{include.link}}'
+       },
+       "showDuration": "100000",
+       "timeOut": "100000",
+       "showEasing": "swing",
+       "hideEasing": "linear",
+       "showMethod": "fadeIn",
+       "hideMethod": "fadeOut"
+     }
+     toastr.success("{{include.message}}", "New message from: <b>Rob Conery</b>");
+   }
+});
+
+</script>

@@ -199,7 +199,7 @@ customer = %Customer{name: "Jill Customer"}
 IO.inspect customer
 ```
 
-Structs are formalized maps and are very useful for complex data interactions. Elixir developers from typed language backgrounds that use classes etc will find this a comfortable construct. **Be careful** with this notion - *structs are NOT CLASSES**.
+Structs are formalized maps and are very useful for complex data interactions. Elixir developers from typed language backgrounds that use classes etc will find this a comfortable construct. **Be careful** with this notion - *structs are NOT CLASSES*.
 
 Elixir differs from Erlang in this way: *you can change the value of a struct*:
 
@@ -217,3 +217,5 @@ For some functional developers, this might seem absolutely crazy. Consider, howe
 Anyway - most of the time you can just let the data be the data without resorting to using a struct, which is often just extra weight and complexity. It can be useful for defaults, etc, but consider using a function to create a map or some data you want to use other places in your app.
 
 <hr>
+
+{% include message_popup.html link="/email/i-need-you-to-setup-a-project" message="I need you to setup a project real fast" %}

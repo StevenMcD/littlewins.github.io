@@ -106,11 +106,10 @@ set wildignore=*.o,*.obj,.git,node_modules/**,bower_components/**,**/node_module
 map <leader><space> :!mix test<CR>
 ```
 
-## Get Moving!
+## That's a Win! Now Get Moving!
 
 Sorry to be pushy but there's a lot going on here right now - we have a new CTO and she's ready to can the entire effort. Thinks Elixir is a fad. I'm in meetings all day but I'll send you a draft of the Getting Started Manual that should get you off the ground.
 
 The important thing for you right now is to *get your eyes familiar* with the syntax as quickly as I can. I need you **writing code yesterday**. No pressure.
 
-<hr>
-[01 - Letting Elixir Soak In](../manual/letting-elixir-soak-in)
+{% include next_page.html link="../../manual/letting-elixir-soak-in" text="Letting Elixir Soak In" %}
