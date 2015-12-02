@@ -1,6 +1,6 @@
 ---
 layout: email
-title: "Send me a note as SOON AS YOU GET HERE"
+title: "Email as SOON AS YOU GET HERE"
 from: rob@redfour.io
 date: "November 22, 2015"
 category: email

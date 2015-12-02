@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 'Pattern Matching Basics'
+title: '03 - Pattern Matching Basics'
 category: manual
 ---
 

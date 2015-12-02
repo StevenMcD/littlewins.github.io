@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 'A Quick Functional Programming Primer'
+title: '02 - Functional Programming Primer'
 summary: "If you're not familiar with functional programming, read on."
 category: manual
 ---

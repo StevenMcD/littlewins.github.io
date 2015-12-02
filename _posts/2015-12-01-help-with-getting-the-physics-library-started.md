@@ -1,6 +1,6 @@
 ---
 layout: email
-title: 'Help with getting the Physics library started'
+title: 'The Physics Lib'
 category: email
 ---
 
