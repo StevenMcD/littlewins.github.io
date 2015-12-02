@@ -4,13 +4,13 @@ title: 'Help with getting the Physics library started'
 category: email
 ---
 
-The Rocketry Team is hopeing we can get started on the Physics library - it's not something we're supposed to be doing all the time (helping them out with scientific calcs) but they're completely buried for the demo coming up next week.
+The Rocketry Team is hoping we can get started on the Physics library - it's not something we're supposed to be doing all the time (helping them out with scientific calcs) but they're completely buried for the demo coming up next week.
 
-Yeah, I know.
+**Yeah, I know.**
 
-Anyway: I think this would be a fun thing for you to play around with. I'll walk you through it and along the way you can learn about Pattern Matching. You might be wondering why I don't just do it myself if I have the time to write the email?
+Anyway: I think this would be a fun thing for you to play around with. I'll walk you through it and along the way you can put to practice what you've been reading in my manual. **You are reading it right?** You better be, my ass is on the line here.... no pressure :p.
 
-Because you get to test it :). Let's go.
+You might be wondering why I don't just do this Physics library myself if I have the time to write the email? Are you always this much trouble? Jeez! Because you get to test it and testing is fun isn't it. OK pipe down let's go.
 
 ## Organizing the Project
 
@@ -115,7 +115,7 @@ v = %Physics.Planet{}
 v == 11.2 #true
 ```
 
-*What's up with the `:math` notation here? **You can use any Erlang function from within Elixir using the Atom notation above. We're using Math to calc the square root.*
+*What's up with the `:math` notation here? **You can use any Erlang function from within Elixir** using the atom notation above. We're using Math to calc the square root.*
 
 That works nicely. And this is the kind of code you'll probably write when you first start writing Elixir, coming from an object-oriented background. This **is not** idiomatic Elixir at all. Let's see why.
 
@@ -123,7 +123,9 @@ That works nicely. And this is the kind of code you'll probably write when you f
 
 Overall: *we're thinking in terms of an object*. A `Planet` to be specific; attributes, methods, messages. Now this is *working code* and working code is decent code. It can be reused, and tested well - so who cares?
 
-Also: *why did I show you the wrong way first*? Because learning by failure is far more effective. I like to help by both pushing and pulling when it comes to cliffs. Don't you love working with me?
+Also: *why did I show you the wrong way first*? Because that's probably what you were thinking - and that's not a bad thing. Modeling in this way has been around for a while and it takes a bit to unlearn.
+
+Also, learning by failure is far more fun! For me at least - watching you fail is pretty entertaining. Seriously, though, I like to help by both pushing and pulling when it comes to cliffs. Working with me is awesome.
 
 We need to think in terms of **data and transformations**. We can rewrite this code and make some lovely improvements.
 
