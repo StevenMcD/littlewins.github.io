@@ -92,7 +92,7 @@ defmodule DbTest do
 end
 ```
 
-This is an Elixir module with a macro called `test`. It's wonderfully sparse isn't it? Play around with the assertions from what you know already with strings and so on. Fee free to output stuff to the terminal using `IO.inspect` too.
+This is an Elixir module with a macro called `test`. It's wonderfully sparse isn't it? Play around with the assertions from what you know already with strings and so on. Feel free to output stuff to the terminal using `IO.inspect` too.
 
 ## Adding a Dependency
 
